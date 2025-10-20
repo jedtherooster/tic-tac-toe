@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem;
+}
+
+.title {
+    font-size: 2em;
+    color: rgb(66, 66, 66);
+    user-select: none;
+}
+
+.gameboard {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+}
+
+.grid-item {
+    border: 3px solid rgb(66, 66, 66);  
+    height: 150px;
+    width: 150px;
+} .grid-item.t {
+    border-top: none;
+} .grid-item.b {
+    border-bottom: none;
+} .grid-item.l {
+    border-left: none;
+} .grid-item.r {
+    border-right: none;
+}
